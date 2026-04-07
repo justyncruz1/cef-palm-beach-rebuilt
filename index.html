@@ -30,18 +30,10 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    /* Homepage section headlines: single line, no wrapping */
-    .section__header h2 {
-      white-space: nowrap;
-    }
-    @media (max-width: 768px) {
+    /* Homepage section headlines: single line on desktop only */
+    @media (min-width: 769px) {
       .section__header h2 {
-        font-size: clamp(1.25rem, 4.5vw, 2rem);
-      }
-    }
-    @media (max-width: 480px) {
-      .section__header h2 {
-        font-size: clamp(1rem, 4vw, 1.5rem);
+        white-space: nowrap;
       }
     }
   </style>
