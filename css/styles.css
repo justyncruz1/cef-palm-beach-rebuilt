@@ -804,7 +804,7 @@ img {
 
 .hero__scroll {
   position: absolute;
-  bottom: var(--space-xl);
+  bottom: var(--space-sm);
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
