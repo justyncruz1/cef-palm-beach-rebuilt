@@ -1290,9 +1290,11 @@ img {
 }
 
 .footer__logo {
-  height: 56px;
-  width: auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
   margin-bottom: var(--space-lg);
+  object-fit: cover;
 }
 
 .footer__tagline {
