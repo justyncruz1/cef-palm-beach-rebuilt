@@ -1410,6 +1410,24 @@ img {
   color: var(--color-white);
 }
 
+.lyf-credit {
+  text-align: center;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  padding: 12px 0 8px;
+  letter-spacing: 0.05em;
+}
+
+.lyf-credit a {
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.lyf-credit a:hover {
+  color: rgba(255,255,255,0.6);
+}
+
 /* --- Scroll Animations --- */
 .fade-up {
   opacity: 0;
