@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team | CEF Palm Beach &amp; Treasure Coast</title>
+  <meta name="description" content="Meet the staff and board of CEF Palm Beach &amp; Treasure Coast -- faithful servants dedicated to reaching children with the Gospel in Jupiter, FL.">
+  <link rel="canonical" href="https://www.cefpalmbeach.org/pages/our-team.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Team | CEF Palm Beach &amp; Treasure Coast">
+  <meta property="og:description" content="Meet the staff and board of CEF Palm Beach &amp; Treasure Coast -- faithful servants dedicated to reaching children with the Gospel in Jupiter, FL.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cefpalmbeach.org/pages/our-team.html">
+  <meta property="og:image" content="https://www.cefpalmbeach.org/assets/images/children-ministry.jpg">
+  <meta property="og:site_name" content="CEF Palm Beach &amp; Treasure Coast">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Page-Specific Styles -->
+  <style>
+    /* Team Grid */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-2xl);
+    }
+
+    .team-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .team-card__image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .team-card__body {
+      padding: var(--space-xl);
+    }
+
+    .team-card__name {
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: var(--space-xs);
+    }
+
+    .team-card__role {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-md);
+    }
+
+    .team-card__bio {
+      font-size: 0.9375rem;
+      line-height: 1.8;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+    }
+
+    .team-card__contact {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .team-card__contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 0.875rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .team-card__contact a:hover {
+      color: var(--color-primary-dark);
+    }
+
+    .team-card__contact svg {
+      flex-shrink: 0;
+    }
+
+    /* Board Section */
+    .board-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    .board-card {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg) var(--space-xl);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      border-top: 3px solid var(--color-primary);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .board-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .board-card__name {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-xs);
+    }
+
+    .board-card__title {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .board-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .board-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="../index.html" class="header__logo" aria-label="CEF Palm Beach &amp; Treasure Coast - Home">
+        <div class="header__logo-text">
+          CEF
+          <span>Palm Beach &amp; Treasure Coast</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="our-team.html" class="nav__link nav__link--active" aria-haspopup="true" aria-expanded="false">
+              About
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="../index.html#mission" class="nav__dropdown-link" role="menuitem">Our Story</a></li>
+              <li><a href="statement-of-faith.html" class="nav__dropdown-link" role="menuitem">Statement of Faith</a></li>
+              <li><a href="our-team.html" class="nav__dropdown-link" role="menuitem">Our Team</a></li>
+              <li><a href="stories.html" class="nav__dropdown-link" role="menuitem">Stories</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="ministries.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Ministries
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="good-news-club.html" class="nav__dropdown-link" role="menuitem">Good News Club</a></li>
+              <li><a href="5-day-club.html" class="nav__dropdown-link" role="menuitem">5-Day Club</a></li>
+              <li><a href="cyia.html" class="nav__dropdown-link" role="menuitem">CYIA</a></li>
+              <li><a href="nextgen.html" class="nav__dropdown-link" role="menuitem">NextGen</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="events.html" class="nav__link">Events</a>
+          </li>
+          <li class="nav__item">
+            <a href="volunteer.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="volunteer.html" class="nav__dropdown-link" role="menuitem">Volunteer</a></li>
+              <li><a href="pray.html" class="nav__dropdown-link" role="menuitem">Pray</a></li>
+              <li><a href="resources.html" class="nav__dropdown-link" role="menuitem">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="donate.html" class="nav__link">Donate</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header__ctas">
+        <a href="good-news-club.html#find" class="header__cta header__cta--outline">Find a Club</a>
+        <a href="volunteer.html" class="header__cta header__cta--outline">Get Involved</a>
+        <a href="donate.html" class="header__cta header__cta--accent">Donate</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="../index.html" class="mobile-menu__link">Home</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          About
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="../index.html#mission">Our Story</a></li>
+          <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="stories.html">Stories</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Ministries
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="good-news-club.html">Good News Club</a></li>
+          <li><a href="5-day-club.html">5-Day Club</a></li>
+          <li><a href="cyia.html">CYIA</a></li>
+          <li><a href="nextgen.html">NextGen</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="events.html" class="mobile-menu__link">Events</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Get Involved
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="pray.html">Pray</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="donate.html" class="mobile-menu__link">Donate</a>
+      </li>
+    </ul>
+    <div class="mobile-menu__ctas">
+      <a href="good-news-club.html#find" class="btn btn--primary">Find a Club</a>
+      <a href="volunteer.html" class="btn btn--secondary">Get Involved</a>
+      <a href="donate.html" class="btn btn--accent">Donate</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main id="main-content">
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero hero--short" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <img src="../assets/images/children-ministry.jpg"
+             alt="CEF Palm Beach team members serving children in ministry"
+             width="1920" height="1080">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__aurora"></div>
+
+      <div class="hero__content">
+        <h1 id="hero-heading" class="hero__title">Our Team</h1>
+        <p class="hero__subtitle">
+          Faithful servants with a heart for children and a passion for the Gospel.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         STAFF SECTION
+         ============================================ -->
+    <section class="section" aria-labelledby="staff-heading">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label">The People Behind the Mission</span>
+          <h2 id="staff-heading">Our Staff</h2>
+        </div>
+
+        <div class="team-grid stagger">
+
+          <!-- Carrie Chiurato -->
+          <div class="team-card fade-up">
+            <img src="../assets/images/team-carrie.jpg"
+                 alt="Carrie Chiurato, Director of CEF Palm Beach &amp; Treasure Coast"
+                 class="team-card__image"
+                 width="600" height="450"
+                 loading="lazy">
+            <div class="team-card__body">
+              <h3 class="team-card__name">Carrie Chiurato</h3>
+              <p class="team-card__role">Director, Palm Beach &amp; Treasure Coast</p>
+              <p class="team-card__bio">
+                Carrie began working with CEF at the age of 15. She loves teaching children in Good News Club, and now serves as Director for the Palm Beach &amp; Treasure Coast Chapter. She loves being a wife and mom and is very busy homeschooling her 3 boys. She loves reading with her boys the most, and in her spare time enjoys traveling, swimming, reading, and relaxing with her family.
+              </p>
+              <div class="team-card__contact">
+                <a href="mailto:carrie@cefpalmbeach.org">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  carrie@cefpalmbeach.org
+                </a>
+                <a href="tel:+15613166042">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  (561) 316-6042
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Malary Diaz -->
+          <div class="team-card fade-up">
+            <img src="../assets/images/team-malary.jpg"
+                 alt="Malary Diaz, Ministry Coordinator of CEF Palm Beach &amp; Treasure Coast"
+                 class="team-card__image"
+                 width="600" height="450"
+                 loading="lazy">
+            <div class="team-card__body">
+              <h3 class="team-card__name">Malary Diaz</h3>
+              <p class="team-card__role">Ministry Coordinator, Palm Beach &amp; Treasure Coast</p>
+              <p class="team-card__bio">
+                Florida girl Malary has a heart for people to hear the Good News of Jesus Christ and be saved. She began working in Good News Clubs with her family at the age of 14. Now as Ministry Coordinator, she assists our Director in facilitating the needs of our Good News Clubs, connecting team members, and coordinating more opportunities of ministry in our community. Some of her favorite things are the beach, paddleboarding, and trying new restaurants.
+              </p>
+              <div class="team-card__contact">
+                <a href="mailto:malary@cefpalmbeach.org">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  malary@cefpalmbeach.org
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marlene Diaz -->
+          <div class="team-card fade-up">
+            <img src="../assets/images/team-marlene.jpg"
+                 alt="Marlene Diaz, Office Manager of CEF Palm Beach &amp; Treasure Coast"
+                 class="team-card__image"
+                 width="600" height="450"
+                 loading="lazy">
+            <div class="team-card__body">
+              <h3 class="team-card__name">Marlene Diaz</h3>
+              <p class="team-card__role">Office Manager, Palm Beach &amp; Treasure Coast</p>
+              <p class="team-card__bio">
+                Marlene is the team lead for four Good News Clubs while she homeschools her children. She is also a Children's Church and VBS teacher and sings in the choir of her church. In 2025, she joined our staff to facilitate the growing demands and needs of our CEF chapter office. Marlene's passion is to reach children with the life-changing Gospel of Jesus Christ.
+              </p>
+              <div class="team-card__contact">
+                <a href="mailto:marlene@cefpalmbeach.org">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  marlene@cefpalmbeach.org
+                </a>
+                <a href="tel:+15615435058">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  (561) 543-5058
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Debra Verheij -->
+          <div class="team-card fade-up">
+            <img src="../assets/images/team-debra.jpg"
+                 alt="Debra Verheij, Office Associate of CEF Palm Beach &amp; Treasure Coast"
+                 class="team-card__image"
+                 width="600" height="450"
+                 loading="lazy">
+            <div class="team-card__body">
+              <h3 class="team-card__name">Debra Verheij</h3>
+              <p class="team-card__role">Office Associate, Palm Beach &amp; Treasure Coast</p>
+              <p class="team-card__bio">
+                Born in Connecticut, Debra moved to Florida from California in 2018, where she lived for 12 years. Prior to retirement in 2005, Debra was Senior VP &amp; Corporate Secretary for a consumer products company in Connecticut. She has been a Good News Club member for four years.
+              </p>
+              <div class="team-card__contact">
+                <a href="mailto:debra@cefpalmbeach.org">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  debra@cefpalmbeach.org
+                </a>
+                <a href="tel:+12032530590">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  (203) 253-0590
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         BOARD SECTION
+         ============================================ -->
+    <section class="section section--alt" aria-labelledby="board-heading">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label">Leadership</span>
+          <h2 id="board-heading">Local Board Members</h2>
+        </div>
+
+        <div class="board-grid stagger">
+          <div class="board-card fade-up">
+            <p class="board-card__name">Stephanie McDermott</p>
+            <p class="board-card__title">Chairwoman</p>
+          </div>
+          <div class="board-card fade-up">
+            <p class="board-card__name">Ann Dreyer</p>
+            <p class="board-card__title">Secretary</p>
+          </div>
+          <div class="board-card fade-up">
+            <p class="board-card__name">Kim Estrada</p>
+            <p class="board-card__title">Board Member</p>
+          </div>
+          <div class="board-card fade-up">
+            <p class="board-card__name">Sarah Newcomer</p>
+            <p class="board-card__title">Board Member</p>
+          </div>
+          <div class="board-card fade-up">
+            <p class="board-card__name">Scott Miller</p>
+            <p class="board-card__title">Treasurer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA BANNER
+         ============================================ -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container fade-up">
+        <h2 id="cta-heading">Called to Serve?</h2>
+        <p>God is building something incredible in Palm Beach County. If you have a heart for children and a willingness to serve, we would love to hear from you.</p>
+        <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+          <a href="volunteer.html" class="btn btn--white btn--lg">Become a Volunteer</a>
+          <a href="mailto:director@cefpalmbeach.org" class="btn btn--ghost btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="header__logo-text" style="font-size: 1.125rem; color: var(--color-white); margin-bottom: var(--space-md);">
+            CEF
+            <span style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Palm Beach &amp; Treasure Coast</span>
+          </div>
+          <p class="footer__tagline">
+            A local chapter of Child Evangelism Fellowship, reaching children with the Gospel of Jesus Christ since 2001.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/cefpalmbeach" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/cefpalmbeach" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- About Column -->
+        <div>
+          <h4 class="footer__col-title">About</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#mission">Our Story</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Ministries Column -->
+        <div>
+          <h4 class="footer__col-title">Ministries</h4>
+          <ul class="footer__links">
+            <li><a href="good-news-club.html">Good News Club</a></li>
+            <li><a href="5-day-club.html">5-Day Club</a></li>
+            <li><a href="cyia.html">CYIA</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <address style="font-style: normal;">
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+15613166042">(561) 316-6042</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:director@cefpalmbeach.org">director@cefpalmbeach.org</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>169 Tequesta Dr, 22W<br>Jupiter, FL 33469</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Child Evangelism Fellowship of Palm Beach &amp; Treasure Coast. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="statement-of-faith.html">Statement of Faith</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

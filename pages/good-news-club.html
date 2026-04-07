@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good News Club | After-School Bible Clubs | CEF Palm Beach</title>
+  <meta name="description" content="Good News Club brings exciting Bible lessons, songs, and Scripture memory to children in public elementary schools across Palm Beach and Martin Counties.">
+  <link rel="canonical" href="https://www.cefpalmbeach.org/pages/good-news-club.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Good News Club | After-School Bible Clubs | CEF Palm Beach">
+  <meta property="og:description" content="Good News Club brings exciting Bible lessons, songs, and Scripture memory to children in public elementary schools across Palm Beach and Martin Counties.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cefpalmbeach.org/pages/good-news-club.html">
+  <meta property="og:image" content="https://www.cefpalmbeach.org/assets/images/good-news-club.jpg">
+  <meta property="og:site_name" content="CEF Palm Beach &amp; Treasure Coast">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Page-Specific Styles -->
+  <style>
+    /* Two-Column Content Block */
+    .content-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: center;
+    }
+
+    .content-split__text h2 {
+      margin-bottom: var(--space-lg);
+    }
+
+    .content-split__text p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--color-text-muted);
+    }
+
+    .content-split__image {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .content-split__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+    }
+
+    /* School List */
+    .school-list {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .school-list__title {
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: var(--space-lg);
+      padding-bottom: var(--space-sm);
+      border-bottom: 2px solid var(--color-primary);
+      display: inline-block;
+    }
+
+    .school-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding: var(--space-md) var(--space-lg);
+      border-bottom: 1px solid var(--color-border);
+      transition: background var(--duration-fast);
+    }
+
+    .school-row:first-of-type {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .school-row:hover {
+      background: var(--color-surface-alt);
+    }
+
+    .school-row__name {
+      font-weight: 600;
+      color: var(--color-text);
+      font-size: 0.9375rem;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .school-row__status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .school-row__status--register {
+      background: rgba(34, 139, 34, 0.1);
+      color: #1a7a1a;
+    }
+
+    .school-row__status--register::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #22b822;
+    }
+
+    .school-row__status--waitlist {
+      background: rgba(218, 165, 32, 0.12);
+      color: #9a7b00;
+    }
+
+    .school-row__status--waitlist::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #daa520;
+    }
+
+    .school-row__status--contact,
+    .school-row__status--coming {
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--color-text-muted);
+    }
+
+    .school-row__status--contact::before,
+    .school-row__status--coming::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-gray);
+    }
+
+    .school-row__action {
+      flex-shrink: 0;
+    }
+
+    .school-row__action .btn {
+      padding: 8px 20px;
+      font-size: 0.8125rem;
+      min-height: 36px;
+    }
+
+    /* Get Involved CTA Section */
+    .involve-cta {
+      background: var(--color-surface-alt);
+    }
+
+    .involve-cta__inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: var(--space-2xl);
+      align-items: center;
+    }
+
+    .involve-cta__text h2 {
+      margin-bottom: var(--space-md);
+    }
+
+    .involve-cta__buttons {
+      display: flex;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .content-split {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+      }
+
+      .content-split__image {
+        order: -1;
+      }
+
+      .school-row {
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+        padding: var(--space-md);
+      }
+
+      .school-row__name {
+        flex-basis: 100%;
+      }
+
+      .school-row__status {
+        font-size: 0.6875rem;
+      }
+
+      .school-row__action .btn {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+      }
+
+      .involve-cta__inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .involve-cta__buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="../index.html" class="header__logo" aria-label="CEF Palm Beach &amp; Treasure Coast - Home">
+        <div class="header__logo-text">
+          CEF
+          <span>Palm Beach &amp; Treasure Coast</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="our-team.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              About
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="../index.html#mission" class="nav__dropdown-link" role="menuitem">Our Story</a></li>
+              <li><a href="statement-of-faith.html" class="nav__dropdown-link" role="menuitem">Statement of Faith</a></li>
+              <li><a href="our-team.html" class="nav__dropdown-link" role="menuitem">Our Team</a></li>
+              <li><a href="stories.html" class="nav__dropdown-link" role="menuitem">Stories</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="ministries.html" class="nav__link nav__link--active" aria-haspopup="true" aria-expanded="false">
+              Ministries
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="good-news-club.html" class="nav__dropdown-link" role="menuitem">Good News Club</a></li>
+              <li><a href="5-day-club.html" class="nav__dropdown-link" role="menuitem">5-Day Club</a></li>
+              <li><a href="cyia.html" class="nav__dropdown-link" role="menuitem">CYIA</a></li>
+              <li><a href="nextgen.html" class="nav__dropdown-link" role="menuitem">NextGen</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="events.html" class="nav__link">Events</a>
+          </li>
+          <li class="nav__item">
+            <a href="volunteer.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="volunteer.html" class="nav__dropdown-link" role="menuitem">Volunteer</a></li>
+              <li><a href="pray.html" class="nav__dropdown-link" role="menuitem">Pray</a></li>
+              <li><a href="resources.html" class="nav__dropdown-link" role="menuitem">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="donate.html" class="nav__link">Donate</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header__ctas">
+        <a href="good-news-club.html#find" class="header__cta header__cta--outline">Find a Club</a>
+        <a href="volunteer.html" class="header__cta header__cta--outline">Get Involved</a>
+        <a href="donate.html" class="header__cta header__cta--accent">Donate</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="../index.html" class="mobile-menu__link">Home</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          About
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="../index.html#mission">Our Story</a></li>
+          <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="stories.html">Stories</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Ministries
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="good-news-club.html">Good News Club</a></li>
+          <li><a href="5-day-club.html">5-Day Club</a></li>
+          <li><a href="cyia.html">CYIA</a></li>
+          <li><a href="nextgen.html">NextGen</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="events.html" class="mobile-menu__link">Events</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Get Involved
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="pray.html">Pray</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="donate.html" class="mobile-menu__link">Donate</a>
+      </li>
+    </ul>
+    <div class="mobile-menu__ctas">
+      <a href="good-news-club.html#find" class="btn btn--primary">Find a Club</a>
+      <a href="volunteer.html" class="btn btn--secondary">Get Involved</a>
+      <a href="donate.html" class="btn btn--accent">Donate</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main id="main-content">
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero hero--short" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <img src="../assets/images/good-news-club.jpg"
+             alt="Children smiling and participating in a Good News Club Bible lesson at an elementary school"
+             width="1920" height="1080">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__aurora"></div>
+
+      <div class="hero__content">
+        <h1 id="hero-heading" class="hero__title">Good News Club</h1>
+        <p class="hero__subtitle">
+          Bringing the Gospel to children in public elementary schools across Palm Beach and Martin Counties.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHAT IS GOOD NEWS CLUB
+         ============================================ -->
+    <section class="section" aria-labelledby="what-heading">
+      <div class="container">
+        <div class="content-split fade-up">
+          <div class="content-split__text">
+            <span class="section__label">After-School Ministry</span>
+            <h2 id="what-heading">What Is Good News Club?</h2>
+            <p>
+              Good News Club is a ministry of Child Evangelism Fellowship in which trained teachers meet with groups of children in schools, homes, community centers, churches, and apartment complexes&mdash;anywhere children can easily and safely meet with their parent's permission.
+            </p>
+            <p>
+              Each week the teacher presents an exciting Bible lesson using colorful materials from CEF Press. This action-packed time also includes songs, Scripture memory, a missions story, and review games focused on the lesson's theme.
+            </p>
+          </div>
+          <div class="content-split__image">
+            <img src="../assets/images/gnc-logo.png"
+                 alt="Good News Club logo with colorful design representing the ministry"
+                 width="600" height="450"
+                 loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FAQ ACCORDION
+         ============================================ -->
+    <section class="section section--alt" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <div class="section__header fade-up">
+          <span class="section__label">Common Questions</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion fade-up">
+
+          <!-- FAQ 1 -->
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-1">
+              <span>Can we really teach the Gospel in public schools?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion__content" id="faq-1" role="region">
+              <div class="accordion__body">
+                <p>Yes! In 2001, the U.S. Supreme Court ruled in <em>Good News Club v. Milford Central School</em> that Good News Clubs can meet in public schools after school hours on the same terms as other community groups. Children attend only with their parents' permission.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-2">
+              <span>What is taught in Good News Club?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion__content" id="faq-2" role="region">
+              <div class="accordion__body">
+                <p>Each week an exciting Bible lesson is presented along with songs, Scripture memory, a missions story, and review games. Small Groups and Wonder Time help children dive deeper into their relationship with God. Every club includes a clear presentation of the Gospel and strong discipleship training. All children are encouraged to attend a local church.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-3">
+              <span>Who teaches Good News Club?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion__content" id="faq-3" role="region">
+              <div class="accordion__body">
+                <p>Christians who are concerned for boys and girls volunteer their time and energy. They are trained by CEF to lead clubs that are exciting and informative. Teachers sign the CEF Statement of Faith and agree to abide by organizational policies. All adults are screened according to our child protection policy.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="faq-4">
+              <span>How much does it cost?</span>
+              <svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion__content" id="faq-4" role="region">
+              <div class="accordion__body">
+                <p>Good News Club is completely free for all children to attend.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SCHOOL REGISTRATION
+         ============================================ -->
+    <section class="section" id="find" aria-labelledby="schools-heading">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label">Find a Club</span>
+          <h2 id="schools-heading">Find a Good News Club at Your School</h2>
+          <p>Does your school have a Good News Club? Check the list below and register your child today! Schools marked as &ldquo;Waitlist&rdquo; are currently full but accepting waitlist registrations.</p>
+        </div>
+
+        <!-- Palm Beach County -->
+        <div class="school-list fade-up">
+          <h3 class="school-list__title">Palm Beach County</h3>
+
+          <div class="school-row">
+            <span class="school-row__name">Azure Community Center</span>
+            <span class="school-row__status school-row__status--contact">Contact Us</span>
+            <div class="school-row__action">
+              <a href="mailto:Director@cefpalmbeach.org" class="btn btn--secondary btn--sm">Contact</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Beacon Cove Intermediate School</span>
+            <span class="school-row__status school-row__status--register">Register</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/v9UBmH1iPtTxGRzEA" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Register</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Carver Christian Academy</span>
+            <span class="school-row__status school-row__status--contact">Contact Us</span>
+            <div class="school-row__action">
+              <a href="mailto:Director@cefpalmbeach.org" class="btn btn--secondary btn--sm">Contact</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">D.D. Eisenhower Elementary</span>
+            <span class="school-row__status school-row__status--contact">Contact Us</span>
+            <div class="school-row__action">
+              <a href="mailto:Director@cefpalmbeach.org" class="btn btn--secondary btn--sm">Contact</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Elbridge Gale Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/G7Tq8LjNzd6sJSGg9" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">H.L. Johnson Elementary &ndash; Aftercare Only</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/HBBHyZji7JA1Zs6q9" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Jerry Thomas Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/CHcbCDrYZParSVPx8" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Jupiter Elementary &ndash; Session 1</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/YBtoWEHTv8avJoBT9" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Jupiter Elementary &ndash; Session 2 &ndash; Aftercare</span>
+            <span class="school-row__status school-row__status--register">Register</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/XSiDEWkifBZEro3R6" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Register</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Jupiter Farms Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/FKh3yWnQzJYGV8TG7" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Limestone Creek Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/ucbQ9LS4ze2EZUAA7" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Loxahatchee Groves Elementary</span>
+            <span class="school-row__status school-row__status--register">Register</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/MnC7j3J7S854Wgfv6" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Register</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Marsh Pointe Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/E5Gw3AjTxckRrxx99" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Palmetto Elementary &ndash; West Campus 3rd&ndash;5th</span>
+            <span class="school-row__status school-row__status--register">Register</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/qUfjJthuXGEVfqyr7" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Register</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Panther Run Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJOotV6SMOkPzGa1lVAa1oHbie8CI42Ny3ULPwZJ5jWVl0TA/viewform" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Wellington Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/691K8AmUyvXmXviF7" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Westward Elementary</span>
+            <span class="school-row__status school-row__status--register">Register</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/kFdubvLgJW3oYkuK7" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Martin County -->
+        <div class="school-list fade-up">
+          <h3 class="school-list__title">Martin County</h3>
+
+          <div class="school-row">
+            <span class="school-row__name">Boys &amp; Girls Club Indiantown</span>
+            <span class="school-row__status school-row__status--coming">Coming Soon</span>
+            <div class="school-row__action">
+              <span class="btn btn--secondary btn--sm" style="opacity: 0.5; pointer-events: none;">Coming Soon</span>
+            </div>
+          </div>
+
+          <div class="school-row">
+            <span class="school-row__name">Pinewood Elementary</span>
+            <span class="school-row__status school-row__status--waitlist">Waitlist</span>
+            <div class="school-row__action">
+              <a href="https://forms.gle/BnZtjed4MmncY2gd9" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         GET INVOLVED CTA
+         ============================================ -->
+    <section class="section involve-cta" aria-labelledby="involve-heading">
+      <div class="container">
+        <div class="involve-cta__inner fade-up">
+          <div class="involve-cta__text">
+            <h2 id="involve-heading">Want to Start a Club at Your School?</h2>
+            <p>There are several ways to be involved with Good News Club. You can pray, serve, or invest in our after-school ministry.</p>
+          </div>
+          <div class="involve-cta__buttons">
+            <a href="volunteer.html" class="btn btn--primary btn--lg">Volunteer</a>
+            <a href="mailto:Director@cefpalmbeach.org" class="btn btn--secondary btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="header__logo-text" style="font-size: 1.125rem; color: var(--color-white); margin-bottom: var(--space-md);">
+            CEF
+            <span style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Palm Beach &amp; Treasure Coast</span>
+          </div>
+          <p class="footer__tagline">
+            A local chapter of Child Evangelism Fellowship, reaching children with the Gospel of Jesus Christ since 2001.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/cefpalmbeach" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/cefpalmbeach" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- About Column -->
+        <div>
+          <h4 class="footer__col-title">About</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#mission">Our Story</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Ministries Column -->
+        <div>
+          <h4 class="footer__col-title">Ministries</h4>
+          <ul class="footer__links">
+            <li><a href="good-news-club.html">Good News Club</a></li>
+            <li><a href="5-day-club.html">5-Day Club</a></li>
+            <li><a href="cyia.html">CYIA</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <address style="font-style: normal;">
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+15613166042">(561) 316-6042</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:director@cefpalmbeach.org">director@cefpalmbeach.org</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>169 Tequesta Dr, 22W<br>Jupiter, FL 33469</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Child Evangelism Fellowship of Palm Beach &amp; Treasure Coast. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="statement-of-faith.html">Statement of Faith</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

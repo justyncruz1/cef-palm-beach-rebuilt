@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statement of Faith | CEF Palm Beach & Treasure Coast</title>
+  <meta name="description" content="Read the Statement of Faith of Child Evangelism Fellowship -- our foundational beliefs about Scripture, God, salvation, and the mission to reach every child.">
+  <link rel="canonical" href="https://www.cefpalmbeach.org/pages/statement-of-faith.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Statement of Faith | CEF Palm Beach & Treasure Coast">
+  <meta property="og:description" content="Read the Statement of Faith of Child Evangelism Fellowship -- our foundational beliefs about Scripture, God, salvation, and the mission to reach every child.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cefpalmbeach.org/pages/statement-of-faith.html">
+  <meta property="og:site_name" content="CEF Palm Beach &amp; Treasure Coast">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Page-Specific Styles -->
+  <style>
+    /* Statement of Faith Layout */
+    .faith-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto var(--space-3xl);
+    }
+
+    .faith-intro h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    .faith-intro p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--color-text-muted);
+    }
+
+    .faith-list {
+      max-width: 820px;
+      margin: 0 auto;
+      list-style: none;
+      padding: 0;
+      counter-reset: faith-counter;
+    }
+
+    .faith-item {
+      display: flex;
+      gap: var(--space-xl);
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faith-item:first-child {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .faith-item__number {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      background: var(--color-primary);
+      color: var(--color-white, #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.125rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .faith-item__content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .faith-item__text {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--color-text);
+    }
+
+    .faith-item__ref {
+      display: block;
+      margin-top: var(--space-sm);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .faith-item {
+        gap: var(--space-md);
+        padding: var(--space-lg) 0;
+      }
+
+      .faith-item__number {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9375rem;
+      }
+
+      .faith-item__text {
+        font-size: 0.9375rem;
+      }
+
+      .faith-intro h2 {
+        font-size: 1.625rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="../index.html" class="header__logo" aria-label="CEF Palm Beach &amp; Treasure Coast - Home">
+        <div class="header__logo-text">
+          CEF
+          <span>Palm Beach &amp; Treasure Coast</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="our-team.html" class="nav__link nav__link--active" aria-haspopup="true" aria-expanded="false">
+              About
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="../index.html#mission" class="nav__dropdown-link" role="menuitem">Our Story</a></li>
+              <li><a href="statement-of-faith.html" class="nav__dropdown-link" role="menuitem">Statement of Faith</a></li>
+              <li><a href="our-team.html" class="nav__dropdown-link" role="menuitem">Our Team</a></li>
+              <li><a href="stories.html" class="nav__dropdown-link" role="menuitem">Stories</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="ministries.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Ministries
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="good-news-club.html" class="nav__dropdown-link" role="menuitem">Good News Club</a></li>
+              <li><a href="5-day-club.html" class="nav__dropdown-link" role="menuitem">5-Day Club</a></li>
+              <li><a href="cyia.html" class="nav__dropdown-link" role="menuitem">CYIA</a></li>
+              <li><a href="nextgen.html" class="nav__dropdown-link" role="menuitem">NextGen</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="events.html" class="nav__link">Events</a>
+          </li>
+          <li class="nav__item">
+            <a href="volunteer.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="volunteer.html" class="nav__dropdown-link" role="menuitem">Volunteer</a></li>
+              <li><a href="pray.html" class="nav__dropdown-link" role="menuitem">Pray</a></li>
+              <li><a href="resources.html" class="nav__dropdown-link" role="menuitem">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="donate.html" class="nav__link">Donate</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header__ctas">
+        <a href="good-news-club.html#find" class="header__cta header__cta--outline">Find a Club</a>
+        <a href="volunteer.html" class="header__cta header__cta--outline">Get Involved</a>
+        <a href="donate.html" class="header__cta header__cta--accent">Donate</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="../index.html" class="mobile-menu__link">Home</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          About
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="../index.html#mission">Our Story</a></li>
+          <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="stories.html">Stories</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Ministries
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="good-news-club.html">Good News Club</a></li>
+          <li><a href="5-day-club.html">5-Day Club</a></li>
+          <li><a href="cyia.html">CYIA</a></li>
+          <li><a href="nextgen.html">NextGen</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="events.html" class="mobile-menu__link">Events</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Get Involved
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="pray.html">Pray</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="donate.html" class="mobile-menu__link">Donate</a>
+      </li>
+    </ul>
+    <div class="mobile-menu__ctas">
+      <a href="good-news-club.html#find" class="btn btn--primary">Find a Club</a>
+      <a href="volunteer.html" class="btn btn--secondary">Get Involved</a>
+      <a href="donate.html" class="btn btn--accent">Donate</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main id="main-content">
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero hero--short" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <div style="width:100%;height:100%;background:linear-gradient(135deg, #114a5f 0%, #4f7887 100%);"></div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__aurora"></div>
+
+      <div class="hero__content">
+        <h1 id="hero-heading" class="hero__title">Statement of Faith</h1>
+        <p class="hero__subtitle">
+          What we believe and the foundation upon which everything we do is built.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         STATEMENT OF FAITH
+         ============================================ -->
+    <section class="section" aria-labelledby="faith-heading">
+      <div class="container">
+
+        <div class="faith-intro fade-up">
+          <h2 id="faith-heading">We Believe</h2>
+          <p>
+            The following doctrinal statement reflects the foundational beliefs of Child Evangelism Fellowship. Every ministry, program, and lesson we teach is rooted in these truths.
+          </p>
+        </div>
+
+        <ol class="faith-list" role="list">
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">1</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                &ldquo;All Scripture is given by inspiration of God,&rdquo; by which we understand the whole book called The Bible; that it is inerrant in the original writing and that its teaching and authority are absolute, supreme and final. That the Holy Spirit guided the holy men of old in all that they wrote.
+              </p>
+              <span class="faith-item__ref">2 Timothy 3:16; Deuteronomy 4:2; 2 Peter 1:21</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">2</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                The Godhead eternally exists in three persons &mdash; the Father, the Son and the Holy Spirit. These three are one God, having the same nature, attributes and perfection.
+              </p>
+              <span class="faith-item__ref">Romans 1:20; Matthew 28:19; Deuteronomy 4:35; John 17:5</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">3</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                In the Personality and Deity of the Lord Jesus Christ, begotten of the Holy Spirit, born of the Virgin Mary, truly God and truly man.
+              </p>
+              <span class="faith-item__ref">John 1:1, 14; John 10:30; Matthew 1:20; Luke 1:30-31; Philippians 2:5-7; 1 Timothy 3:16; Colossians 1:19</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">4</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                In the Personality and Deity of the Holy Spirit, the source and power of all acceptable worship and service, the infallible interpreter of the infallible Word, who indwells every true believer, and is ever present to testify of Christ.
+              </p>
+              <span class="faith-item__ref">John 15:26; Acts 5:3-4; Acts 1:8; Romans 8:26-27; 1 Corinthians 2:12, 14; Romans 8:9</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">5</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That man was created in the image of God but the whole human race fell in the fall of the first Adam. Therefore, he cannot see nor enter the kingdom of God until he is born again by the Holy Spirit.
+              </p>
+              <span class="faith-item__ref">Genesis 1:26-27; Romans 5:12; Ephesians 2:1-3; John 3:3, 6-7; Titus 3:5</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">6</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That Jesus Christ became the sinner&rsquo;s substitute before God, and died as a propitiatory sacrifice for the sins of the whole world.
+              </p>
+              <span class="faith-item__ref">1 John 2:2; Hebrews 2:9; Galatians 3:13; Romans 3:25; Romans 5:8; Colossians 1:13-14</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">7</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                In the resurrection of the crucified body of Jesus Christ; that His body was raised from the dead according to the Scriptures, and that He ascended into Heaven.
+              </p>
+              <span class="faith-item__ref">Luke 24:39; Acts 1:10-11; Ephesians 4:10; Hebrews 1:3; 1 John 2:1</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">8</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That Christ is received by faith alone and that the moment we trust Him as our Savior we pass out of death into everlasting life.
+              </p>
+              <span class="faith-item__ref">Hebrews 9:15; John 5:24; Romans 3:28; Ephesians 1:3; Galatians 2:20</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">9</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That the Church is composed of all those who truly believe on the Lord Jesus Christ as Savior. It is the body and the bride of Christ.
+              </p>
+              <span class="faith-item__ref">Ephesians 1:22-23; 1 Corinthians 12:22-27; Ephesians 4:3-6; Ephesians 5:32</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">10</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That all believers are called into a life of separation from worldly and sinful practices and are created in Christ Jesus unto good works.
+              </p>
+              <span class="faith-item__ref">1 John 2:15-16; Romans 13:14; Ephesians 2:10; Galatians 6:10</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">11</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                In the evangelization of the world; that the supreme mission of the people of God in this age is to preach the Gospel to every creature. That special emphasis should be placed upon the evangelization of children.
+              </p>
+              <span class="faith-item__ref">Mark 16:15; 2 Corinthians 5:18-19; Matthew 18:14</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">12</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                In the personal return of our Lord and Savior Jesus Christ.
+              </p>
+              <span class="faith-item__ref">Acts 1:11; 1 Thessalonians 4:16-17; John 14:1-3; Titus 2:13</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">13</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That the souls of those who have trusted the Lord Jesus Christ for salvation do at death immediately pass into His presence.
+              </p>
+              <span class="faith-item__ref">Luke 23:43; 2 Corinthians 5:8; Philippians 1:23; 1 Thessalonians 4:15-18</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">14</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                That the souls of the lost remain after death in misery until the final judgment.
+              </p>
+              <span class="faith-item__ref">Luke 16:22-23; Hebrews 9:27; Revelation 20:5, 11-15; 2 Thessalonians 1:7-9</span>
+            </div>
+          </li>
+
+          <li class="faith-item fade-up">
+            <div class="faith-item__number" aria-hidden="true">15</div>
+            <div class="faith-item__content">
+              <p class="faith-item__text">
+                In the reality and personality of Satan.
+              </p>
+              <span class="faith-item__ref">Revelation 12:9; Ephesians 6:11-12; 1 Peter 5:8; Revelation 20:10</span>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="header__logo-text" style="font-size: 1.125rem; color: var(--color-white); margin-bottom: var(--space-md);">
+            CEF
+            <span style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Palm Beach &amp; Treasure Coast</span>
+          </div>
+          <p class="footer__tagline">
+            A local chapter of Child Evangelism Fellowship, reaching children with the Gospel of Jesus Christ since 2001.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/cefpalmbeach" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/cefpalmbeach" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- About Column -->
+        <div>
+          <h4 class="footer__col-title">About</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#mission">Our Story</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Ministries Column -->
+        <div>
+          <h4 class="footer__col-title">Ministries</h4>
+          <ul class="footer__links">
+            <li><a href="good-news-club.html">Good News Club</a></li>
+            <li><a href="5-day-club.html">5-Day Club</a></li>
+            <li><a href="cyia.html">CYIA</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <address style="font-style: normal;">
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+15613166042">(561) 316-6042</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:director@cefpalmbeach.org">director@cefpalmbeach.org</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>169 Tequesta Dr, 22W<br>Jupiter, FL 33469</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Child Evangelism Fellowship of Palm Beach &amp; Treasure Coast. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="statement-of-faith.html">Statement of Faith</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

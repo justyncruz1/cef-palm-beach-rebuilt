@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | CEF Palm Beach &amp; Treasure Coast</title>
+  <meta name="description" content="View upcoming events for CEF Palm Beach including Good News Club training conferences, CYIA registration, and community outreach opportunities.">
+  <link rel="canonical" href="https://www.cefpalmbeach.org/pages/events.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Events | CEF Palm Beach &amp; Treasure Coast">
+  <meta property="og:description" content="View upcoming events for CEF Palm Beach including Good News Club training conferences, CYIA registration, and community outreach opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cefpalmbeach.org/pages/events.html">
+  <meta property="og:image" content="https://www.cefpalmbeach.org/assets/images/children-ministry.jpg">
+  <meta property="og:site_name" content="CEF Palm Beach &amp; Treasure Coast">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Page-Specific Styles -->
+  <style>
+    /* Event Cards */
+    .events-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+
+    .event-card {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: var(--space-xl);
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .event-card__date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: var(--space-xl) var(--space-lg);
+      text-align: center;
+      min-height: 140px;
+    }
+
+    .event-card__date-icon {
+      margin-bottom: var(--space-sm);
+      opacity: 0.7;
+    }
+
+    .event-card__date-text {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+    }
+
+    .event-card__date-sub {
+      font-size: 0.75rem;
+      font-weight: 400;
+      opacity: 0.8;
+      margin-top: var(--space-xs);
+    }
+
+    .event-card__body {
+      padding: var(--space-xl) var(--space-xl) var(--space-xl) 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .event-card__title {
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: var(--color-text);
+      margin-bottom: var(--space-sm);
+    }
+
+    .event-card__description {
+      font-size: 0.9375rem;
+      line-height: 1.8;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+    }
+
+    .event-card__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: color 0.2s ease, gap 0.2s ease;
+    }
+
+    .event-card__cta:hover {
+      color: var(--color-primary-dark);
+      gap: var(--space-sm);
+    }
+
+    .event-card__cta svg {
+      flex-shrink: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .event-card {
+        grid-template-columns: 1fr;
+      }
+
+      .event-card__date {
+        flex-direction: row;
+        gap: var(--space-sm);
+        min-height: auto;
+        padding: var(--space-md) var(--space-lg);
+      }
+
+      .event-card__date-icon {
+        margin-bottom: 0;
+      }
+
+      .event-card__body {
+        padding: 0 var(--space-xl) var(--space-xl) var(--space-xl);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="../index.html" class="header__logo" aria-label="CEF Palm Beach &amp; Treasure Coast - Home">
+        <div class="header__logo-text">
+          CEF
+          <span>Palm Beach &amp; Treasure Coast</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="our-team.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              About
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="../index.html#mission" class="nav__dropdown-link" role="menuitem">Our Story</a></li>
+              <li><a href="statement-of-faith.html" class="nav__dropdown-link" role="menuitem">Statement of Faith</a></li>
+              <li><a href="our-team.html" class="nav__dropdown-link" role="menuitem">Our Team</a></li>
+              <li><a href="stories.html" class="nav__dropdown-link" role="menuitem">Stories</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="ministries.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Ministries
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="good-news-club.html" class="nav__dropdown-link" role="menuitem">Good News Club</a></li>
+              <li><a href="5-day-club.html" class="nav__dropdown-link" role="menuitem">5-Day Club</a></li>
+              <li><a href="cyia.html" class="nav__dropdown-link" role="menuitem">CYIA</a></li>
+              <li><a href="nextgen.html" class="nav__dropdown-link" role="menuitem">NextGen</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="events.html" class="nav__link nav__link--active">Events</a>
+          </li>
+          <li class="nav__item">
+            <a href="volunteer.html" class="nav__link" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="volunteer.html" class="nav__dropdown-link" role="menuitem">Volunteer</a></li>
+              <li><a href="pray.html" class="nav__dropdown-link" role="menuitem">Pray</a></li>
+              <li><a href="resources.html" class="nav__dropdown-link" role="menuitem">Resources</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="donate.html" class="nav__link">Donate</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header__ctas">
+        <a href="good-news-club.html#find" class="header__cta header__cta--outline">Find a Club</a>
+        <a href="volunteer.html" class="header__cta header__cta--outline">Get Involved</a>
+        <a href="donate.html" class="header__cta header__cta--accent">Donate</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="../index.html" class="mobile-menu__link">Home</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          About
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="../index.html#mission">Our Story</a></li>
+          <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="stories.html">Stories</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Ministries
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="good-news-club.html">Good News Club</a></li>
+          <li><a href="5-day-club.html">5-Day Club</a></li>
+          <li><a href="cyia.html">CYIA</a></li>
+          <li><a href="nextgen.html">NextGen</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="events.html" class="mobile-menu__link">Events</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link mobile-menu__toggle">
+          Get Involved
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <ul class="mobile-menu__sub">
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="pray.html">Pray</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="donate.html" class="mobile-menu__link">Donate</a>
+      </li>
+    </ul>
+    <div class="mobile-menu__ctas">
+      <a href="good-news-club.html#find" class="btn btn--primary">Find a Club</a>
+      <a href="volunteer.html" class="btn btn--secondary">Get Involved</a>
+      <a href="donate.html" class="btn btn--accent">Donate</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main id="main-content">
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero hero--short" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <img src="../assets/images/children-ministry.jpg"
+             alt="Children and volunteers gathered at a CEF Palm Beach event"
+             width="1920" height="1080">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__aurora"></div>
+
+      <div class="hero__content">
+        <h1 id="hero-heading" class="hero__title">Upcoming Events</h1>
+        <p class="hero__subtitle">
+          Training, conferences, and opportunities to connect with our ministry.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         EVENTS LIST
+         ============================================ -->
+    <section class="section" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label">Mark Your Calendar</span>
+          <h2 id="events-heading">Upcoming Events &amp; Training</h2>
+        </div>
+
+        <div class="events-list stagger">
+
+          <!-- Event 1 -->
+          <article class="event-card fade-up">
+            <div class="event-card__date">
+              <svg class="event-card__date-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span class="event-card__date-text">September<br>2025</span>
+              <span class="event-card__date-sub">Bi-Annual</span>
+            </div>
+            <div class="event-card__body">
+              <h3 class="event-card__title">Good News Club Training Conference</h3>
+              <p class="event-card__description">
+                Prepare to lead a Good News Club! This conference trains volunteers from local churches on how to conduct effective and meaningful ministry to children. Learn CEF's proven methods, receive your curriculum materials, and connect with other volunteers.
+              </p>
+              <a href="mailto:Director@cefpalmbeach.org" class="event-card__cta">
+                Contact Us for Details
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Event 2 -->
+          <article class="event-card fade-up">
+            <div class="event-card__date">
+              <svg class="event-card__date-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span class="event-card__date-text">January<br>2026</span>
+              <span class="event-card__date-sub">Bi-Annual</span>
+            </div>
+            <div class="event-card__body">
+              <h3 class="event-card__title">Good News Club Training Conference</h3>
+              <p class="event-card__description">
+                Our mid-year training refresher for new and returning Good News Club volunteers. Get equipped with new materials and sharpen your skills for the spring semester.
+              </p>
+              <a href="mailto:Director@cefpalmbeach.org" class="event-card__cta">
+                Contact Us for Details
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Event 3 -->
+          <article class="event-card fade-up">
+            <div class="event-card__date">
+              <svg class="event-card__date-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              <span class="event-card__date-text">Summer<br>2026</span>
+              <span class="event-card__date-sub">Annual</span>
+            </div>
+            <div class="event-card__body">
+              <h3 class="event-card__title">CYIA Summer Training</h3>
+              <p class="event-card__description">
+                One week of intensive training for students ages 12&ndash;22. Learn to teach children, present the Gospel, and lead 5-Day Clubs in your community.
+              </p>
+              <a href="cyia.html" class="event-card__cta">
+                Learn More About CYIA
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Event 4 -->
+          <article class="event-card fade-up">
+            <div class="event-card__date">
+              <svg class="event-card__date-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              <span class="event-card__date-text">3rd Wed<br>Monthly</span>
+              <span class="event-card__date-sub">10 &ndash; 11 AM</span>
+            </div>
+            <div class="event-card__body">
+              <h3 class="event-card__title">Monthly Prayer Call</h3>
+              <p class="event-card__description">
+                Join us for prayer over the ministry. Dial <a href="tel:+16677701560" style="color: var(--color-primary); font-weight: 600;">(667) 770-1560</a>, access code <strong>134605#</strong>.
+              </p>
+              <a href="pray.html" class="event-card__cta">
+                View Prayer Guide
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA BANNER
+         ============================================ -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container fade-up">
+        <h2 id="cta-heading">Don't Miss an Opportunity to Be Part of What God Is Doing</h2>
+        <p>From training conferences to weekly prayer, there are many ways to connect with our ministry and make a lasting impact in the lives of children.</p>
+        <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+          <a href="volunteer.html" class="btn btn--white btn--lg">Get Involved</a>
+          <a href="donate.html" class="btn btn--ghost btn--lg">Donate Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="header__logo-text" style="font-size: 1.125rem; color: var(--color-white); margin-bottom: var(--space-md);">
+            CEF
+            <span style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Palm Beach &amp; Treasure Coast</span>
+          </div>
+          <p class="footer__tagline">
+            A local chapter of Child Evangelism Fellowship, reaching children with the Gospel of Jesus Christ since 2001.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/cefpalmbeach" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/cefpalmbeach" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- About Column -->
+        <div>
+          <h4 class="footer__col-title">About</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#mission">Our Story</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Ministries Column -->
+        <div>
+          <h4 class="footer__col-title">Ministries</h4>
+          <ul class="footer__links">
+            <li><a href="good-news-club.html">Good News Club</a></li>
+            <li><a href="5-day-club.html">5-Day Club</a></li>
+            <li><a href="cyia.html">CYIA</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <address style="font-style: normal;">
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+15613166042">(561) 316-6042</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:director@cefpalmbeach.org">director@cefpalmbeach.org</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>169 Tequesta Dr, 22W<br>Jupiter, FL 33469</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Child Evangelism Fellowship of Palm Beach &amp; Treasure Coast. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="statement-of-faith.html">Statement of Faith</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
